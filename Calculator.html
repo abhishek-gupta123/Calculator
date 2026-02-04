@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" name="menu_check" id="menu_check" class="check">
+        <label for="menu_check" class="menu_label"> <i class="ri-menu-line"></i>
+            <h2>Standard</h2>
+        </label>
+
+
+
+        <div class="menu-bar">
+            <div class="menu-bar-header">
+                <label for="menu_check"><i class="ri-menu-line"></i></label>
+            </div>
+
+            <div class="menu-content">
+
+                <h5>Calculator</h5>
+
+                <ul class="menu-ul">
+                    <li class="active"><a href="">Standard</a></li>
+                    <li><a href="">Scientific</a></li>
+                    <li><a href="">Graphing</a></li>
+                    <li><a href="">Programmer</a></li>
+                    <li><a href="">Date calculation</a></li>
+                </ul>
+
+                <h5>Converter</h5>
+
+                <ul class="menu-ul">
+                    <li><a href="">Currency</a></li>
+                    <li><a href="">Volume</a></li>
+                    <li><a href="">Length</a></li>
+                    <li><a href="">Weight and mass</a></li>
+                    <li><a href="">Temperature</a></li>
+                    <li><a href="">Energy</a></li>
+                    <li><a href="">Area</a></li>
+                    <li><a href="">Speed</a></li>
+                    <li><a href="">Time</a></li>
+                    <li><a href="">Power</a></li>
+                    <li><a href="">Data</a></li>
+                    <li><a href="">Pressure</a></li>
+                    <li><a href="">Angle</a></li>
+                </ul>
+            </div>
+            <div class="footer"><a href="">Settings</a></div>
+        </div>
+
+        <div class="nav-save">
+            <input type="checkbox" name="history_check" id="history_check" class="check">
+            <label for="history_check" class="saved-label">History</label>
+
+            <input type="checkbox" name="memory_check" id="memory_check" class="check">
+            <label for="memory_check" class="saved-label" >Memory</label>
+            <div class="history-bar ">
+                <p>There's no history yet.</p>
+            </div>
+            <div class="memory-bar">
+                <p>There's noting saved in memory.</p>
+            </div>
+
+            <label for="history_check" class="history-icon"><i class="ri-history-line"></i></label>
+        </div>
+    </nav>
+
+    <div class="main">
+        <input type="text" name="inputBox" id="inputBox" placeholder="0">
+
+        <div class="memory_buttons_box">
+            <button class="disabled">MC</button>
+            <button class="disabled">MR</button>
+            <button class="memory-button">M+</button>
+            <button class="memory-button">M-</button>
+            <button class="memory-button">MS</button>
+            <button class="disabled hidden">M<i class="ri-arrow-down-s-line"></i></button>
+        </div>
+
+      <div class="calculator-buttons-box">
+          <div class="button-div">
+            <button>%</button>
+            <button>1/x</button>
+            <button>7</button>
+            <button>4</button>
+            <button>1</button>
+            <button>+/-</button>
+        </div>
+        <div  class="button-div">
+            <button>CE</button>
+            <button>x<sup>2</sup></button>
+            <button>8</button>
+            <button>5</button>
+            <button>2</button>
+            <button>0</button>
+        </div>
+        <div  class="button-div">
+            <button>C</button>
+            <button><sup>2</sup>&radic;x</button>
+            <button>9</button>
+            <button>6</button>
+            <button>3</button>
+            <button>.</button>
+        </div>
+        <div  class="button-div">
+            <button><i class="ri-delete-back-2-line"></i></button>
+            <button><i class="ri-divide-line"></i></button>
+            <button><i class="ri-close-fill"></i></button>
+            <button>-</button>
+            <button>+</button>
+            <button class="last-btn">=</button>
+        </div>
+      </div>
+
+    </div>
+
+</body>
+
+</html>
