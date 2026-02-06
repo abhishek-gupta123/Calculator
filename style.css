@@ -34,6 +34,10 @@ nav {
     display: none;
 }
 
+.check2 {
+    display: none;
+}
+
 .menu_label {
     display: flex;
     justify-content: space-between;
@@ -77,12 +81,15 @@ nav .nav-save {
     border-radius: 20px;
 
 }
-.menu-ul i{
+
+.menu-ul i {
     padding: 10px;
 }
-.footer a i{
+
+.footer a i {
     padding: 7px;
 }
+
 .menu-bar .menu-bar-header {
     height: 50px;
     display: flex;
@@ -228,6 +235,16 @@ nav .nav-save {
 
 
 }
+.indicator{
+        position: absolute;
+        width: 30px;
+        height:5px;
+        background-color: rgb(225, 0, 255);
+        top: 40px;
+        right: 140px;
+        border-radius: 20px;
+        transition: all .3s;
+}
 
 .memory-bar p {
     font-size: .8rem;
@@ -237,9 +254,11 @@ nav .nav-save {
 #history_check:checked~.history-bar {
     right: 0%;
 }
-
+#history_check:checked~.indicator{
+    right: 205px;
+}
 #memory_check:checked~.memory-bar {
-    right: 0;
+    right: 0%;
 }
 
 
@@ -368,6 +387,20 @@ nav .nav-save {
     .history-icon {
         display: flex;
         cursor: pointer;
+    }
+    .indicator{
+        display: none;
+    }
+    #history_check2:checked~.history-bar {
+        right: 0%;
+    }
+
+    #history_check:checked~.history-bar {
+        right: -100%;
+    }
+
+    #memory_check:checked~.memory-bar {
+        right: -100%;
     }
 
     .hidden {

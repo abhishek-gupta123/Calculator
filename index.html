@@ -59,11 +59,14 @@
         </div>
 
         <div class="nav-save">
-            <input type="checkbox" name="history_check" id="history_check" class="check">
+            <input type="radio" name="History" id="history_check" class="check" >
             <label for="history_check" class="saved-label">History</label>
 
-            <input type="checkbox" name="memory_check" id="memory_check" class="check">
+            <input type="radio" name="History" id="memory_check" class="check" checked>
             <label for="memory_check" class="saved-label" >Memory</label>
+
+             <input type="checkbox" name="History" id="history_check2" class="check2">
+            <label for="history_check2" class="history-icon"><i class="ri-history-line"></i></label>
             <div class="history-bar ">
                 <p>There's no history yet.</p>
             </div>
@@ -71,7 +74,7 @@
                 <p>There's noting saved in memory.</p>
             </div>
 
-            <label for="history_check" class="history-icon"><i class="ri-history-line"></i></label>
+           <span class="indicator"></span>
         </div>
     </nav>
 
